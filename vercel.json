@@ -1,0 +1,21 @@
+{
+    "projects": [
+      {
+        "src": "server",
+        "buildCommand": "npm install",
+        "outputDirectory": "."
+      },
+      {
+        "src": "client",
+        "buildCommand": "npm run build",
+        "outputDirectory": "dist"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "/server/index.js"
+      }
+    ]
+  }
+  
